@@ -9,6 +9,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: 24f1002448@ds.study.iitm.ac.in   # 👈 must match exactly
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 24f1002448@ds.study.iitm.ac.in
+        id: 24f1002448@ds.study.iitm.ac.in           # 👈 the ID for automated scripts
         run: echo "Hello, world!"
 
