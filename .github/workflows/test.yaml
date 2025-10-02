@@ -1,4 +1,4 @@
-name: Email Action Test
+name: Email Step Test
 
 on:
   push:
@@ -9,9 +9,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Echo email
-        id: 24f1002448@ds.study.iitm.ac.in   # 👈 ID matches email exactly
+      # Step with email as both name and ID
+      - name: 24f1002448@ds.study.iitm.ac.in
+        id: 24f1002448@ds.study.iitm.ac.in
         run: echo "Hello, world!"
