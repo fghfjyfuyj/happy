@@ -12,6 +12,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 24f1002448@ds.study.iitm.ac.in
-        id:  24f1002448@ds.study.iitm.ac.in         # 👈 the ID for automated scripts
+      - name: Echo email
+        id: 24f1002448@ds.study.iitm.ac.in   # 👈 ID matches email exactly
         run: echo "Hello, world!"
